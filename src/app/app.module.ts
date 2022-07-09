@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PokemonFormComponent } from './components/pokemon/pokemon-form/pokemon-form.component';
 import { PokemonCardComponent } from './components/pokemon/pokemon-card/pokemon-card.component';
 import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PokedexComponent } from './views/pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-
     PokemonFormComponent,
     PokemonCardComponent,
     PokemonListComponent,
+    PokedexComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
