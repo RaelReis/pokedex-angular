@@ -24,4 +24,13 @@ export class PokemonService {
   getList() {
     return this.http.get<PokemonList>(this.POKEMON_LIST_URL);
   }
+
+  formatPokemonId(pokemon: Pokemon) {
+    if (pokemon.id < 10) {
+      pokemon.id = '00' + pokemon.id;
+    } else {
+      pokemon.id = '0' + pokemon.id;
+    }
+    return pokemon;
+  }
 }

@@ -19,6 +19,7 @@ export class PokemonCardComponent implements OnInit {
     this.pokemonsService
       .getPokemonByUrl(this.pokemonUrl)
       .subscribe((pokeInfo) => {
+        pokeInfo = this.pokemonsService.formatPokemonId(pokeInfo)
         this.pokemonInfo = pokeInfo;
       });
   }
