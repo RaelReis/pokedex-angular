@@ -1,0 +1,47 @@
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 50rem;
+  margin: 0 auto;
+
+  input {
+    font-family: inherit;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #212121;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.459);
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+
+    width: 5rem;
+    height: 5rem;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      transform: scale(100%);
+      opacity: 0.8;
+      transition: all 200ms ease;
+
+      &:hover {
+        transform: scale(120%);
+        opacity: 1;
+      }
+    }
+  }
+}

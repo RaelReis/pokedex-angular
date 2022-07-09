@@ -1,0 +1,12 @@
+<div class="pokemon-card">
+  <span class="pokemon-card__id">
+    {{ pokemonInfo?.id }}
+  </span>
+  <img
+    class="pokemon-card__image"
+    [src]="pokemonInfo?.sprites?.other?.['official-artwork']?.front_default"
+  />
+  <span class="pokemon-card__name">
+    {{ pokemonInfo?.name }}
+  </span>
+</div>

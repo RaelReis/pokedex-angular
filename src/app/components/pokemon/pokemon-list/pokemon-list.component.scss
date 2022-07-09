@@ -1,0 +1,34 @@
+// .container {
+//   height: 100px;
+//   width: 100px;
+//   margin: 0 auto;
+//   transition: all 200ms ease-in;
+//   border: 1px solid black;
+//   cursor: pointer;
+//   animation: looping 5000ms ease-in infinite;
+// }
+.pokemon-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+}
+
+.notFound {
+  text-align: center;
+}
+
+@keyframes looping {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}

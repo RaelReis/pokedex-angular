@@ -1,0 +1,9 @@
+<div *ngIf="pokemonList; else notFound" class="pokemon-list-container">
+  <div *ngFor="let pokemon of pokemonList?.results">
+    <app-pokemon-card [pokemonUrl]="pokemon.url"></app-pokemon-card>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <span class="notFound">Nenhum pokemon encontrado</span>
+</ng-template>

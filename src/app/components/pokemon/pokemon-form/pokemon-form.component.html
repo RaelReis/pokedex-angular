@@ -1,0 +1,11 @@
+<form class="inputBox" (submit)="handleSubmit()">
+  <input
+    [(ngModel)]="searchText"
+    placeholder="Search a pokemon."
+    name="search"
+    type="text"
+  />
+  <button type="submit">
+    <img src="/assets/img/search_logo.svg" alt="Image button" />
+  </button>
+</form>
